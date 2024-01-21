@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import Card from "../components/Card";
 import { Item } from "../types/Item";
 import { API_URL } from "../utils/constants";
+import Spinner from "../components/Spinner";
 
 export default function Home() {
   const { isPending, isError, error, data } = useQuery({
@@ -11,8 +12,8 @@ export default function Home() {
 
   if (isPending) {
     return (
-      <div className="w-screen h-screen flex justify-center items-center">
-        <span>Loading...</span>
+      <div className="w-screen h-40 flex justify-center items-center">
+        <Spinner />
       </div>
     );
   }
