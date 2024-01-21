@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Verdana";
+  src: url("../fonts/verdana.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("../fonts/verdana-bold.ttf");
+  font-weight: bold;
+}
